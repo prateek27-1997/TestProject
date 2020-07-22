@@ -1,0 +1,19 @@
+<table>
+  <h1>List Authors</h1>
+  <% @authors.each do |author| %>
+    <tr>
+      <td>First Name: <%= author.first_name %></td>
+    </tr>
+    <tr>
+      <td>Last Name <%= author.last_name %></td>
+    </tr>
+    <tr>
+      <td>Date of Birth <%= author.date_of_birth %></td>
+    </tr>
+    <td><%= link_to 'Edit', edit_author_path(author) %>
+    <%= link_to 'Destroy', author_path(author), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  <% end %>
+</table>
+<%= link_to 'New Book', new_book_path %>
+
+

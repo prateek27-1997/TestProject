@@ -1,0 +1,18 @@
+<h1> Edit Author</h1>
+<%= form_for @author do |f| %>
+<p>
+  <%= f.label :First_Name %> <br>
+  <%= f.text_area :first_name %>
+</p>
+<p>
+  <%= f.label :Last_Name %> <br>
+  <%= f.text_area :last_name %>
+</p>
+<p>
+  <%= f.label :Date_of_Birth %> <br>
+  <%= f.text_area :date_of_birth %>
+</p>
+<p>
+  <%= f.submit %>
+</p>
+<% end %>

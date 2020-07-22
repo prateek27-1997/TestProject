@@ -1,0 +1,12 @@
+<h1> New Book</h1>
+<%= form_for @book do |f| %>
+<p>
+  <%= f.label :Book_Title %> <br>
+  <%= f.text_area :book_title %>
+</p>
+<p>
+  <%= f.submit %>
+</p>
+<% end %>
+<td><%= link_to 'List Books', books_path %>
+<td><%= link_to 'List Author Details', authors_path %>
